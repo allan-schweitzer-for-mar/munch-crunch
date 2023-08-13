@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- index.html 8/9/2023 -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MaryAnneRich</title>
+	<link href="https://fonts.cdnfonts.com/css/skrawk-serif" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script>
+	images = ["cover.jpg",
+		"page2.jpg", 
+		"page3.jpg", 
+		"page4.jpg",
+		"page5.jpg",
+		"page6.jpg",
+		"page7.jpg",
+		"page8.jpg",
+		]
+	index = 1;
+	function show() {
+		document.getElementById("cover").src = images[index];
+		index += 1;
+		if (index === 7) { index = 0 };
+	}
+	</script>
+</head>
+<body>
+	<center><div class="header">
+		<h1>Munch, Crunch a Caterpiller Tale</h1>
+	</center>
+	</div>
+	<center>
+		<div class="nav">
+			<a href="sub/marbio.html" ><button class="b">Author</button></a>
+			<a href="sub/sarahsteinberg.html"><button class="b">Illustrator</button></a>
+			<a href="sub/inclass.html"><button class="b">In Class</button></a>
+			<a href="sub/contact.html"><button class="b">Contact</button></a>
+			<a href="sub/marbio.html"><button class="b">Buy Me!</button></a>
+		</div>
+	<div>
+	<p class="preview">
+	In <strong>Munch, Crunch: A Caterpillar Tale</strong> Becky and Otto learn the importance of listening to one another, valuing kindness, and working together to protect beauty in our world.</p><br></div>
+<center>
+	<button onclick="show()">Click to preview </button>
+
+
+	<div > 
+		<img id="cover" src="sub/cover.jpg" alt="cover" width="300px" >
+	</div>
+</center>
+	
+</body>
